@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from 'gatsby';
+import { StaticImage } from "gatsby-plugin-image"
+import logoImage from '../logo'
 
 const Menu = () => (
   <div className="menu-wrapper">
-    <h1>Logo</h1>
-    <h2>Home</h2>
-    <h2>Exemplos</h2>
-    <h2>Contato</h2>
+    <logoImage />
+    <Link to="/">Home</Link>
+    <Link to="/projetos">Projetos</Link>
+    <Link to="/contato">Contato</Link>
   </div>
 )
 
