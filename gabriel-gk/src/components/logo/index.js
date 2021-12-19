@@ -4,13 +4,13 @@ import * as S from "./styled"
 
 const Logo = () => {
   return (
-    <S.AvatarWrapper>
+    <S.NavWrapper>
       <StaticImage
         src="../../images/GhostK_cor.png"
         alt="Logo GhostK"
         placeholder="blurred"
       />
-    </S.AvatarWrapper>
+    </S.NavWrapper>
   )
 }
 

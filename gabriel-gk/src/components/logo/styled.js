@@ -1,15 +1,16 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 
-export const AvatarWrapper = styled.div`
+export const NavWrapper = styled.div`
   .gatsby-image-wrapper {
-    border-radius: 50%;
-    height: 3.75rem;
+    background-color: black;
+    border-radius: 10%;
     margin: auto;
-    width: 3.75rem;
+    height: 5rem;
+    width: 5rem;
     ${media.lessThan("large")`
-    height: 1.875rem;
-    width: 1.875rem;
+    height: 3rem;
+    width: 3rem;
   `}
   }
 `
