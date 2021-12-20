@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
 //#region Reset
 * {
   padding:0;
@@ -14,14 +16,15 @@ const GlobalStyles = createGlobalStyle`
 //#endregion
 
 :root{
-  --black-bg: #040404;
-  --dark-grey: #1c1c1c;
-  --light-grey: #dcccec;
-  --purple-bg: #6c0bac;
-  --light-pink: #f37bbb;
-  --dark-pink: #f37bbb;
-  --white-bg: #f7f2fb;
+  --black-bg: hsl(0, 0%, 2%, 1);
+  --dark-grey: hsl(0, 0%, 11%, .8);
+  --light-grey: hsl(270, 46%, 86%);
+  --purple-bg: 	hsl(276, 88%, 36%, 1);
+  --light-pink: hsl(328, 83%, 72%);
+  --dark-pink: hsl(328, 79%, 48%);
+  --white-bg: hsl(273, 53%, 97%, .5);
   font-size: 62.5%;
+  font-family: 'Source Code Pro', monospace;
 }
 
 body{

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 
-export const NavWrapper = styled.div`
+export const LogoWrapper = styled.div`
   .gatsby-image-wrapper {
     background-color: black;
     border-radius: 10%;

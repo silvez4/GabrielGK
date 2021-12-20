@@ -1,13 +1,15 @@
 import React from "react";
-import { Link } from 'gatsby';
 import Logo from '../logo';
+import * as S from "./styled"
 
 const Menu = () => (
   <div className="menu-wrapper">
     <Logo />
-    <Link to="/">Home</Link>
-    <Link to="/projetos">Projetos</Link>
-    <Link to="/contato">Contato</Link>
+    <S.MenuWrapper className="links">
+      <S.StyledLink to="/">Home</S.StyledLink>
+      <S.StyledLink to="/projetos">Projetos</S.StyledLink>
+      <S.StyledLink to="/contato">Contato</S.StyledLink>
+    </S.MenuWrapper>
   </div>
 )
 
