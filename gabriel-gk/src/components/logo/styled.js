@@ -4,8 +4,7 @@ import media from "styled-media-query"
 export const LogoWrapper = styled.div`
   .gatsby-image-wrapper {
     background-color: black;
-    border-radius: 10%;
-    margin: auto;
+    margin: 1rem auto;
     height: 5rem;
     width: 5rem;
     ${media.lessThan("large")`

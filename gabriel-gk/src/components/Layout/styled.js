@@ -9,6 +9,9 @@ export const LayoutWrapper = styled.section`
 `
 export const LayoutMain = styled.main`
   background: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   padding: 2em 0;
 `
