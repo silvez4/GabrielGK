@@ -7,7 +7,7 @@ export const LogoWrapper = styled.div`
     margin: 1rem auto;
     height: 5rem;
     width: 5rem;
-    ${media.lessThan("large")`
+    ${media.lessThan("medium")`
     height: 3rem;
     width: 3rem;
   `}

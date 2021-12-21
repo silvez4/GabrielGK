@@ -12,12 +12,11 @@ export const MenuWrapper = styled.div`
   top: 0;
   right: 0;
   height: 100vh;
-  width: 30vw;
+  min-width: 30%;
   
   background: var(--dark-grey);
-  font-size: 3rem;
+  font-size: clamp(10px, 2.5rem, 3vw);
   text-decoration: none;
-
 `;
 
 export const StyledLink = styled(Link)`
@@ -62,7 +61,18 @@ export const MenuBtn = styled.div`
   margin: 1rem 2rem 1rem 0;
   height: 5rem;
   width: 5rem;
-  ${media.lessThan("large")`
+  &::before{
+    content: '';
+    background: blue;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+  }
+  ${media.lessThan("medium")`
     height: 3rem;
     width: 3rem;
   `}
