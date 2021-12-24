@@ -7,11 +7,12 @@ import * as S from "./styled"
 const Layout = ({ children }) => {
   return (
     <S.LayoutWrapper>
+      <S.SkipToContent to="#main">Pula Para Conteúdo</S.SkipToContent>
       <GlobalStyles />
       <navbar>
         <Menu />
       </navbar>
-      <S.LayoutMain>{children}</S.LayoutMain>
+      <S.LayoutMain id="main">{children}</S.LayoutMain>
     </S.LayoutWrapper>
   )
 }

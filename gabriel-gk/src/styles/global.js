@@ -25,6 +25,7 @@ const GlobalStyles = createGlobalStyle`
   --white-bg: hsl(273, 53%, 97%, .5);
   font-size: 62.5%;
   font-family: 'Source Code Pro', monospace;
+  scroll-behavior: smooth;
 }
 
 body{
