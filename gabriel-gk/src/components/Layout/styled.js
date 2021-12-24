@@ -13,11 +13,13 @@ export const SkipToContent = styled(Link)`
   position: absolute;
   border: var(--dark-pink) 2px solid;
   padding: .5rem 1rem;
-  transform: translate(-100vw, -100%);
+  margin: .5rem;
+  transform: translateX(-150%);
   transition: transform 350ms ease;
 
   &:focus{
-    transform: translate(-30vw, -100%);
+    /* transform: translate(-30vw, -100%); */
+    transform: translateX(0);
   }
 `
 
