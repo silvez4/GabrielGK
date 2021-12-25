@@ -13,7 +13,7 @@ export const MenuWrapper = styled.div`
   right: 0;
   height: 100vh;
   min-width: 30%;
-  
+  transform: ${({ nav }) => nav ? "translateX(0)" : "translateX(100%)"};
   background: var(--dark-grey);
   font-size: clamp(10px, 2.5rem, 3vw);
   text-decoration: none;
@@ -55,13 +55,17 @@ export const StyledLink = styled(Link)`
 export const MenuBtn = styled.div`
   z-index: 9999;
   position: absolute;
+  cursor: pointer;
+  display:flex;
+  align-items: center;
+  justify-content: center;
   top: 0;
   right: 0;
-  background-color: red;
   margin: 1rem 2rem 1rem 0;
   height: 5rem;
   width: 5rem;
-  &::before{
+
+  /* &::before{
     content: '';
     background: blue;
     display: block;
@@ -71,9 +75,49 @@ export const MenuBtn = styled.div`
     left: 0;
     height: 10px;
     width: 100%;
+  } */
+
+  &:hover span{
+    background: var(--dark-pink);
+  }
+
+  span{
+    display:block;
+    position: relative;
+    width:60%;
+    height: .5rem;
+    border-radius: 2rem;
+    background: var(--light-grey);
+    transition: all 300ms ease-in;
+    transform: ${({ nav }) => nav ? "rotateZ(-45deg)" : "rotateZ(0deg)"};
+  }
+  
+  span::before,
+  span::after{
+    content: '';
+    position: absolute;
+    height: .5rem;
+    width:100%;
+    border-radius: 2rem;
+    margin: .3rem 0;
+    background: inherit;
+    transition: transform 300ms ease;
+  }
+  span::before{
+    bottom: -1.2em;
+    transform: ${({ nav }) => nav ? "rotateZ(90deg) translateX(-30%)" : "rotateZ(0deg)"};
+  }
+  span::after{
+    top: -1.2em;
+    transform: ${({ nav }) => nav ? "translateX(100%)" : "translateX(0)"};
+    background: ${({ nav }) => nav ? "transparent" : "inherit"};
   }
   ${media.lessThan("medium")`
     height: 3rem;
     width: 3rem;
+
+    span{
+      width: 100%;
+    }
   `}
 `;

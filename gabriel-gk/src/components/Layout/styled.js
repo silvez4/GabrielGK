@@ -8,6 +8,7 @@ export const LayoutWrapper = styled.section`
   align-items: center;
   justify-content: center;
 `
+
 export const SkipToContent = styled(Link)`
   color: var(--dark-pink);
   position: absolute;

@@ -26,6 +26,7 @@ const GlobalStyles = createGlobalStyle`
   font-size: 62.5%;
   font-family: 'Source Code Pro', monospace;
   scroll-behavior: smooth;
+  overflow-x:hidden;
 }
 
 body{
