@@ -27,15 +27,16 @@ export const SocialLinksItem = styled.li`
 export const SocialLinksLink = styled.a`
   color: var(--dark-pink);
   text-decoration: none;
-  transition: color 300ms;
-
-  &:hover{
-    color: var(--light-pink);
-  }
 `
 
 export const IconWrapper = styled.div`
   margin: 1rem 0;
   width: 30px;
   height: 30px;
+  transition: all 300ms;
+
+  &:hover{
+    transform: translateY(-.3rem) scale(1.2);
+    color: var(--light-pink);
+  }
 `

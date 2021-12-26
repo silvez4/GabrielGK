@@ -8,6 +8,7 @@ export const MenuWrapper = styled.div`
   z-index: 999;
   position: absolute;
   display: flex;
+  visibility: ${({ nav }) => nav ? "visible" : "hidden"};
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -15,7 +16,7 @@ export const MenuWrapper = styled.div`
   right: 0;
   height: 100vh;
   min-width: 30%;
-  transition: transform ${animMenu} ease;
+  transition: visibility ${animMenu} ease, transform ${animMenu} ease;
   transform: ${({ nav }) => nav ? "translateX(0)" : "translateX(100%)"};
   background: var(--dark-grey);
   font-size: clamp(10px, 2.5rem, 3vw);
@@ -31,7 +32,7 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   margin: 2rem 0;
   width: 100%;
-  transition: all 1s;
+  transition: all ${animMenu};
 
   &::before{
     content: '';
