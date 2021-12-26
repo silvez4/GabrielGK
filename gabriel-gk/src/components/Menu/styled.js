@@ -2,6 +2,8 @@ import styled from "styled-components";
 import media from "styled-media-query"
 import { Link } from 'gatsby';
 
+const animMenu = '300ms';
+
 export const MenuWrapper = styled.div`
   z-index: 999;
   position: absolute;
@@ -13,6 +15,7 @@ export const MenuWrapper = styled.div`
   right: 0;
   height: 100vh;
   min-width: 30%;
+  transition: transform ${animMenu} ease;
   transform: ${({ nav }) => nav ? "translateX(0)" : "translateX(100%)"};
   background: var(--dark-grey);
   font-size: clamp(10px, 2.5rem, 3vw);
@@ -65,18 +68,6 @@ export const MenuBtn = styled.div`
   height: 5rem;
   width: 5rem;
 
-  /* &::before{
-    content: '';
-    background: blue;
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 10px;
-    width: 100%;
-  } */
-
   &:hover span{
     background: var(--dark-pink);
   }
@@ -88,7 +79,7 @@ export const MenuBtn = styled.div`
     height: .5rem;
     border-radius: 2rem;
     background: var(--light-grey);
-    transition: all 300ms ease-in;
+    transition: all ${animMenu} ease-in;
     transform: ${({ nav }) => nav ? "rotateZ(-45deg)" : "rotateZ(0deg)"};
   }
   
@@ -101,7 +92,7 @@ export const MenuBtn = styled.div`
     border-radius: 2rem;
     margin: .3rem 0;
     background: inherit;
-    transition: transform 300ms ease;
+    transition: transform ${animMenu} ease;
   }
   span::before{
     bottom: -1.2em;

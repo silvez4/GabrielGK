@@ -4,6 +4,8 @@ import Menu from "../Menu";
 import GlobalStyles from "../../styles/global";
 import * as S from "./styled"
 
+import SocialLinks from "../SocialLinks";
+
 const Layout = ({ children }) => {
   return (
     <>
@@ -15,6 +17,7 @@ const Layout = ({ children }) => {
         </navbar>
         <S.LayoutMain id="main">{children}</S.LayoutMain>
       </S.LayoutWrapper>
+      <SocialLinks />
     </>
   )
 }

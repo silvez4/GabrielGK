@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
 
 :root{
   --black-bg: hsl(0, 0%, 2%, 1);
-  --dark-grey: hsl(0, 0%, 11%, .8);
+  --dark-grey: hsl(0, 0%, 11%, .9);
   --light-grey: hsl(270, 46%, 86%);
   --purple-bg: 	hsl(276, 88%, 36%, 1);
   --light-pink: hsl(328, 83%, 72%);
