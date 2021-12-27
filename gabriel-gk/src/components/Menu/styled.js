@@ -16,7 +16,7 @@ export const MenuWrapper = styled.div`
   right: 0;
   height: 100vh;
   min-width: 30%;
-  transition: visibility ${animMenu} ease, transform ${animMenu} ease;
+  transition: visibility ${animMenu} ease, transform ${animMenu} ease-in;
   transform: ${({ nav }) => nav ? "translateX(0)" : "translateX(100%)"};
   background: var(--dark-grey);
   font-size: clamp(10px, 2.5rem, 3vw);
@@ -70,7 +70,7 @@ export const MenuBtn = styled.div`
   width: 5rem;
 
   &:hover span{
-    background: var(--dark-pink);
+    background: var(--font-primary);
   }
 
   span{
@@ -79,7 +79,7 @@ export const MenuBtn = styled.div`
     width:60%;
     height: .5rem;
     border-radius: 2rem;
-    background: var(--light-grey);
+    background: var(--dark-pink);
     transition: all ${animMenu} ease-in;
     transform: ${({ nav }) => nav ? "rotateZ(-45deg)" : "rotateZ(0deg)"};
   }

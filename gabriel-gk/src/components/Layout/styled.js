@@ -1,14 +1,22 @@
 import styled from "styled-components";
+import media from "styled-media-query";
 import { Link } from 'gatsby';
-
 
 export const LayoutWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
+`
+
+export const NavbarWrapper = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: var(--dark-grey);
 `
 
 export const SkipToContent = styled(Link)`
@@ -27,10 +35,14 @@ export const SkipToContent = styled(Link)`
 `
 
 export const LayoutMain = styled.main`
-  background: white;
+  /* background: white; */
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
   padding: 2em 0;
+
+  ${media.lessThan('medium')`
+    width: 90%;
+  `}
 `

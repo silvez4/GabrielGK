@@ -1,8 +1,9 @@
 import React from "react";
-import Menu from "../Menu";
 
 import GlobalStyles from "../../styles/global";
 import * as S from "./styled"
+
+import Menu from "../Menu";
 
 import SocialLinks from "../SocialLinks";
 
@@ -12,9 +13,9 @@ const Layout = ({ children }) => {
       <S.SkipToContent to="#main">Pula Para Conteúdo</S.SkipToContent>
       <S.LayoutWrapper>
         <GlobalStyles />
-        <navbar>
+        <S.NavbarWrapper>
           <Menu />
-        </navbar>
+        </S.NavbarWrapper>
         <S.LayoutMain id="main">{children}</S.LayoutMain>
       </S.LayoutWrapper>
       <SocialLinks />

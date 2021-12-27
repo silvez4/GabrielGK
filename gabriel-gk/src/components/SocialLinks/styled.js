@@ -8,7 +8,7 @@ export const SocialLinksWrapper = styled.div`
   margin: 2.5rem;
 
   ${media.lessThan("medium")`
-    margin: 1rem;
+    margin: .5rem;
   `}
 `
 
@@ -39,4 +39,9 @@ export const IconWrapper = styled.div`
     transform: translateY(-.3rem) scale(1.2);
     color: var(--light-pink);
   }
+
+  ${media.lessThan('medium')`
+    width: 25px;
+    height: 25px;
+  `}
 `

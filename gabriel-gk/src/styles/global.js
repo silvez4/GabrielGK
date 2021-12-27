@@ -16,13 +16,15 @@ const GlobalStyles = createGlobalStyle`
 //#endregion
 
 :root{
-  --black-bg: hsl(0, 0%, 2%, 1);
+  --black-bg: hsl(330, 72%, 3%, 1);
   --dark-grey: hsl(0, 0%, 11%, .9);
-  --light-grey: hsl(270, 46%, 86%);
+  --light-grey: hsl(270, 46%, 86%, 1);
   --purple-bg: 	hsl(276, 88%, 36%, 1);
-  --light-pink: hsl(328, 83%, 72%);
-  --dark-pink: hsl(328, 79%, 48%);
+  --light-pink: hsl(328, 83%, 72%, 1);
+  --dark-pink: hsl(328, 79%, 48%, 1);
   --white-bg: hsl(273, 53%, 97%, .5);
+  --font-primary: hsl(190, 98%, 46%, 1);
+  --font-secundary: hsl(190, 63%, 70%, 1);
   font-size: 62.5%;
   font-family: 'Source Code Pro', monospace;
   scroll-behavior: smooth;

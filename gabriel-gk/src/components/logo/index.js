@@ -10,7 +10,7 @@ const Logo = () => {
         alt="Logo GhostK"
         placeholder="blurred"
       />
-      <div id="tudo">
+      {/* <div id="tudo">
         <div id="fund">
           <StaticImage
             src="../../images/GhostK_border.png"
@@ -26,7 +26,7 @@ const Logo = () => {
             placeholder="blurred"
           />
         </div>
-      </div>
+      </div> */}
     </S.LogoWrapper>
   )
 }
