@@ -80,7 +80,7 @@ export const MenuBtn = styled.div`
     height: .5rem;
     border-radius: 2rem;
     background: var(--dark-pink);
-    transition: all ${animMenu} ease-in;
+    transition: all ${animMenu} cubic-bezier(.17,-0.18,.37,1.28);
     transform: ${({ nav }) => nav ? "rotateZ(-45deg)" : "rotateZ(0deg)"};
   }
   
@@ -93,7 +93,7 @@ export const MenuBtn = styled.div`
     border-radius: 2rem;
     margin: .3rem 0;
     background: inherit;
-    transition: transform ${animMenu} ease;
+    transition: transform ${animMenu} cubic-bezier(.17,-0.18,.37,1.28);
   }
   span::before{
     bottom: -1.2em;

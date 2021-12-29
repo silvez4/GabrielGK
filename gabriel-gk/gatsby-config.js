@@ -4,6 +4,14 @@ module.exports = {
     title: "GabrielGK",
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-WFDDXS4",
+        includeInDevelopment: false,
+        enableWebVitalsTracking: true,
+      },
+    },
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-styled-components",
     {

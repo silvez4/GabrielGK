@@ -32,28 +32,48 @@ export const Content = styled.section`
     margin-bottom: 2rem;
   }
 
+  .circuloWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .circulo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;;
+    height: 5rem;
+    border-radius: 0% 100% 100% 0% / 100% 50% 50% 0%;
+    border: 2px solid var(--dark-pink);
+    transform: rotateZ(-20deg);
+    transition: transform 300ms ease;
+  }
+  .circulo:hover{
+    transform: rotateZ(0deg);
+    border: 0;
+  }
+  .texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+  }
 `
 
 export const StyledLink = styled(Link)`
-  position: relative;
-  display: inline-block;
-  flex-wrap: wrap;
+  cursor: pointer;
   text-decoration: none;
-  font-size: clamp(10px, 2rem, 2vw);
+  display: block;
   color: var(--font-primary);
+  font-size: clamp(12px, 2rem, 2vw);
+  transition: color 300ms;
 
-  &::after{
-    content: '';
-    position: absolute;
-    background: var(--font-primary);
-    height: 2px;
-    width: 0%;
-    left: 0;
-    bottom: -.1em;
-    transition: width 300ms;
-  }
-  &:hover::after{
-    width: 95%;
+  &:hover{
+    color: var(--dark-pink);
+    text-shadow: 0px 0px 2px var(--dark-pink);
   }
 `
 
@@ -64,7 +84,7 @@ export const ImgWrapper = styled.div`
   border: 2px solid var(--dark-pink);
   border-radius: 50%;
   filter: grayscale(80%);
-  transition: box-shadow, filter 1s ease;
+  transition: box-shadow 1s ease, filter 1s ease;
 
   &:hover{
     box-shadow: 0px 2px 2px var(--dark-pink),
